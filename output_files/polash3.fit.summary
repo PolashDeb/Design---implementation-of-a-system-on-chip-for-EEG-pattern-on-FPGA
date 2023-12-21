@@ -1,0 +1,20 @@
+Fitter Status : Successful - Fri Jun 14 16:25:39 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : polash3
+Top-level Entity Name : polash3
+Family : Cyclone V
+Device : 5CGXFC7C6U19C6
+Timing Models : Final
+Logic utilization (in ALMs) : 179 / 56,480 ( < 1 % )
+Total registers : 207
+Total pins : 177 / 268 ( 66 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 7,024,640 ( 0 % )
+Total RAM Blocks : 0 / 686 ( 0 % )
+Total DSP Blocks : 1 / 156 ( < 1 % )
+Total HSSI RX PCSs : 0 / 6 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 6 ( 0 % )
+Total HSSI TX PCSs : 0 / 6 ( 0 % )
+Total HSSI PMA TX Serializers : 0 / 6 ( 0 % )
+Total PLLs : 0 / 13 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,234 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+# Date created = 19:51:45  March 03, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		polash3_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CGXFC7C6U19C6
+set_global_assignment -name TOP_LEVEL_ENTITY polash3
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:51:45  MARCH 03, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name VERILOG_FILE polash3.v
+set_global_assignment -name VERILOG_FILE df.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_R10 -to clk
+set_location_assignment PIN_A9 -to arm[0]
+set_location_assignment PIN_A10 -to arm[1]
+set_location_assignment PIN_A14 -to arm[2]
+set_location_assignment PIN_A15 -to arm[3]
+set_location_assignment PIN_A17 -to arm[4]
+set_location_assignment PIN_A20 -to arm[5]
+set_location_assignment PIN_A22 -to arm[6]
+set_location_assignment PIN_B5 -to arm[7]
+set_location_assignment PIN_B6 -to arm[8]
+set_location_assignment PIN_B8 -to arm[9]
+set_location_assignment PIN_B11 -to arm[10]
+set_location_assignment PIN_B12 -to arm[11]
+set_location_assignment PIN_B13 -to arm[12]
+set_location_assignment PIN_B15 -to arm[13]
+set_location_assignment PIN_B16 -to arm[14]
+set_location_assignment PIN_B18 -to arm[15]
+set_location_assignment PIN_B20 -to avg_out[0]
+set_location_assignment PIN_B21 -to avg_out[1]
+set_location_assignment PIN_C6 -to avg_out[2]
+set_location_assignment PIN_C9 -to avg_out[3]
+set_location_assignment PIN_C11 -to avg_out[4]
+set_location_assignment PIN_C13 -to avg_out[5]
+set_location_assignment PIN_C14 -to avg_out[6]
+set_location_assignment PIN_C15 -to avg_out[7]
+set_location_assignment PIN_C16 -to avg_out[8]
+set_location_assignment PIN_C18 -to avg_out[9]
+set_location_assignment PIN_C19 -to avg_out[10]
+set_location_assignment PIN_C20 -to avg_out[11]
+set_location_assignment PIN_C21 -to avg_out[12]
+set_location_assignment PIN_D8 -to avg_out[13]
+set_location_assignment PIN_D11 -to avg_out[14]
+set_location_assignment PIN_D13 -to avg_out[15]
+set_location_assignment PIN_D14 -to data_in[0]
+set_location_assignment PIN_D17 -to data_in[1]
+set_location_assignment PIN_D18 -to data_in[2]
+set_location_assignment PIN_D22 -to data_in[3]
+set_location_assignment PIN_E7 -to data_in[4]
+set_location_assignment PIN_E11 -to data_in[5]
+set_location_assignment PIN_E14 -to data_in[6]
+set_location_assignment PIN_E16 -to data_in[7]
+set_location_assignment PIN_E17 -to data_in[8]
+set_location_assignment PIN_E20 -to data_in[9]
+set_location_assignment PIN_E21 -to data_in[10]
+set_location_assignment PIN_E6 -to data_in[11]
+set_location_assignment PIN_D9 -to data_in[12]
+set_location_assignment PIN_C10 -to data_in[13]
+set_location_assignment PIN_A8 -to data_in[14]
+set_location_assignment PIN_A7 -to data_in[15]
+set_location_assignment PIN_E12 -to data_out[0]
+set_location_assignment PIN_F15 -to data_out[1]
+set_location_assignment PIN_F12 -to data_out[2]
+set_location_assignment PIN_F18 -to data_out[3]
+set_location_assignment PIN_F20 -to data_out[4]
+set_location_assignment PIN_F22 -to data_out[5]
+set_location_assignment PIN_G6 -to data_out[6]
+set_location_assignment PIN_G20 -to data_out[7]
+set_location_assignment PIN_G21 -to data_out[8]
+set_location_assignment PIN_G17 -to data_out[9]
+set_location_assignment PIN_G18 -to data_out[10]
+set_location_assignment PIN_G12 -to data_out[11]
+set_location_assignment PIN_G14 -to data_out[12]
+set_location_assignment PIN_G15 -to data_out[13]
+set_location_assignment PIN_G7 -to data_out[14]
+set_location_assignment PIN_H6 -to data_out[15]
+set_location_assignment PIN_G8 -to deri_out[0]
+set_location_assignment PIN_H8 -to deri_out[1]
+set_location_assignment PIN_H9 -to deri_out[2]
+set_location_assignment PIN_H12 -to deri_out[3]
+set_location_assignment PIN_H19 -to deri_out[4]
+set_location_assignment PIN_H20 -to deri_out[5]
+set_location_assignment PIN_J8 -to deri_out[6]
+set_location_assignment PIN_J9 -to deri_out[7]
+set_location_assignment PIN_J16 -to deri_out[8]
+set_location_assignment PIN_J18 -to deri_out[9]
+set_location_assignment PIN_J17 -to deri_out[10]
+set_location_assignment PIN_J19 -to deri_out[11]
+set_location_assignment PIN_J21 -to deri_out[12]
+set_location_assignment PIN_J22 -to deri_out[13]
+set_location_assignment PIN_K15 -to deri_out[14]
+set_location_assignment PIN_K16 -to deri_out[15]
+set_location_assignment PIN_K19 -to error[0]
+set_location_assignment PIN_K21 -to error[1]
+set_location_assignment PIN_L7 -to error[2]
+set_location_assignment PIN_L8 -to error[3]
+set_location_assignment PIN_L15 -to error[4]
+set_location_assignment PIN_L18 -to error[5]
+set_location_assignment PIN_L19 -to error[6]
+set_location_assignment PIN_L20 -to error[7]
+set_location_assignment PIN_L22 -to error[8]
+set_location_assignment PIN_L9 -to error[9]
+set_location_assignment PIN_M6 -to error[10]
+set_location_assignment PIN_M7 -to error[11]
+set_location_assignment PIN_M8 -to error[12]
+set_location_assignment PIN_M10 -to error[13]
+set_location_assignment PIN_M20 -to error[14]
+set_location_assignment PIN_M21 -to error[15]
+set_location_assignment PIN_M22 -to fil_out[0]
+set_location_assignment PIN_N6 -to fil_out[1]
+set_location_assignment PIN_N8 -to fil_out[2]
+set_location_assignment PIN_N9 -to fil_out[3]
+set_location_assignment PIN_N10 -to fil_out[4]
+set_location_assignment PIN_N18 -to fil_out[5]
+set_location_assignment PIN_N20 -to fil_out[6]
+set_location_assignment PIN_N21 -to fil_out[7]
+set_location_assignment PIN_P6 -to fil_out[8]
+set_location_assignment PIN_P7 -to fil_out[9]
+set_location_assignment PIN_P8 -to fil_out[10]
+set_location_assignment PIN_P12 -to fil_out[11]
+set_location_assignment PIN_P18 -to fil_out[12]
+set_location_assignment PIN_P19 -to fil_out[13]
+set_location_assignment PIN_P21 -to fil_out[14]
+set_location_assignment PIN_P22 -to fil_out[15]
+set_location_assignment PIN_R5 -to high_out[0]
+set_location_assignment PIN_R7 -to high_out[1]
+set_location_assignment PIN_R11 -to high_out[2]
+set_location_assignment PIN_R12 -to high_out[3]
+set_location_assignment PIN_R14 -to high_out[4]
+set_location_assignment PIN_P14 -to high_out[5]
+set_location_assignment PIN_R16 -to high_out[6]
+set_location_assignment PIN_R17 -to high_out[7]
+set_location_assignment PIN_R19 -to high_out[8]
+set_location_assignment PIN_R20 -to high_out[9]
+set_location_assignment PIN_R22 -to high_out[10]
+set_location_assignment PIN_T7 -to high_out[11]
+set_location_assignment PIN_T12 -to high_out[12]
+set_location_assignment PIN_T17 -to high_out[13]
+set_location_assignment PIN_T18 -to high_out[14]
+set_location_assignment PIN_T19 -to high_out[15]
+set_location_assignment PIN_T20 -to low[0]
+set_location_assignment PIN_U6 -to low[1]
+set_location_assignment PIN_U8 -to low[2]
+set_location_assignment PIN_U10 -to low[3]
+set_location_assignment PIN_U11 -to low[4]
+set_location_assignment PIN_U12 -to low[5]
+set_location_assignment PIN_U15 -to low[6]
+set_location_assignment PIN_U16 -to low[7]
+set_location_assignment PIN_U17 -to low[8]
+set_location_assignment PIN_U21 -to low[9]
+set_location_assignment PIN_U22 -to low[10]
+set_location_assignment PIN_V9 -to low[11]
+set_location_assignment PIN_V13 -to low[12]
+set_location_assignment PIN_V15 -to low[13]
+set_location_assignment PIN_V18 -to low[14]
+set_location_assignment PIN_W7 -to low[15]
+set_location_assignment PIN_W8 -to sqr_out[0]
+set_location_assignment PIN_W11 -to sqr_out[1]
+set_location_assignment PIN_W12 -to sqr_out[2]
+set_location_assignment PIN_W13 -to sqr_out[3]
+set_location_assignment PIN_W14 -to sqr_out[4]
+set_location_assignment PIN_W18 -to sqr_out[5]
+set_location_assignment PIN_W21 -to sqr_out[6]
+set_location_assignment PIN_W22 -to sqr_out[7]
+set_location_assignment PIN_Y7 -to sqr_out[8]
+set_location_assignment PIN_Y9 -to sqr_out[9]
+set_location_assignment PIN_Y12 -to sqr_out[10]
+set_location_assignment PIN_Y14 -to sqr_out[11]
+set_location_assignment PIN_Y15 -to sqr_out[12]
+set_location_assignment PIN_Y16 -to sqr_out[13]
+set_location_assignment PIN_Y17 -to sqr_out[14]
+set_location_assignment PIN_Y19 -to sqr_out[15]
+set_location_assignment PIN_Y21 -to up[0]
+set_location_assignment PIN_Y22 -to up[1]
+set_location_assignment PIN_AA8 -to up[2]
+set_location_assignment PIN_AA9 -to up[3]
+set_location_assignment PIN_AA10 -to up[4]
+set_location_assignment PIN_AA15 -to up[5]
+set_location_assignment PIN_AA17 -to up[6]
+set_location_assignment PIN_AA18 -to up[7]
+set_location_assignment PIN_AA20 -to up[8]
+set_location_assignment PIN_AA22 -to up[9]
+set_location_assignment PIN_AA7 -to up[10]
+set_location_assignment PIN_AB8 -to up[11]
+set_location_assignment PIN_AB13 -to up[12]
+set_location_assignment PIN_AB15 -to up[13]
+set_location_assignment PIN_AB16 -to up[14]
+set_location_assignment PIN_AB18 -to up[15]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

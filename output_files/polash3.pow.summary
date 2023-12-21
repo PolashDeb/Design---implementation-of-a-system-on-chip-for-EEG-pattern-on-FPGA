@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Fri Mar 08 22:02:26 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : polash3
+Top-level Entity Name : polash3
+Family : Cyclone V
+Device : 5CGXFC7C6U19C6
+Power Models : Final
+Total Thermal Power Dissipation : 357.85 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 350.00 mW
+I/O Thermal Power Dissipation : 7.85 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

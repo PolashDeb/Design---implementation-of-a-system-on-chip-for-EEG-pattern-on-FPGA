@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at polash3.v(29): always construct contains both blocking and non-blocking assignments File: F:/Software/Quartus_code/polash3/polash3.v Line: 29
+Warning (10268): Verilog HDL information at polash3.v(104): always construct contains both blocking and non-blocking assignments File: F:/Software/Quartus_code/polash3/polash3.v Line: 104
+Warning (10268): Verilog HDL information at polash3.v(133): always construct contains both blocking and non-blocking assignments File: F:/Software/Quartus_code/polash3/polash3.v Line: 133
+Warning (10268): Verilog HDL information at polash3.v(160): always construct contains both blocking and non-blocking assignments File: F:/Software/Quartus_code/polash3/polash3.v Line: 160
